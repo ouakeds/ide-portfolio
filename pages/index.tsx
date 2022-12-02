@@ -30,16 +30,19 @@ export default function Home() {
           </div>
 
           <div className="relative bg-slate-50" id='services'>
-            <div className="p-8 max-w-[1800px] h-screen mt-[-160px] w-full mx-auto flex flex-col justify-center z-10 relative ">
-              <div className='p-8 max-w-[1800px] h-full w-full mx-auto flex flex-wrap flex-col justify-center grid grid-cols-1 md:grid-cols-2 space-x-0 md:space-x-10'>
-                  <div className=''>
+            <div className="p-8 max-w-[1800px] mt-[-160px] w-full mx-auto flex flex-col justify-center z-10 relative ">
+              <div className='p-8 max-w-[1800px] h-full w-full mx-auto flex flex-wrap flex-col justify-center grid grid-cols-1 md:grid-cols-2 space-x-0 md:space-x-20'>
+                  <div className='mt-20'>
                     <h1 className='text-left text-black text-sm lg:text-l font-regular uppercase'>Services_</h1>
                     <h1 className='text-left text-gray-900 text-3xl lg:text-6xl font-bold mt-6 drop-shadow-xl'>Compétences</h1>
                     <p className='mt-10 text-gray-600 text-l mt-4'>
-                      Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.
+                      Passionné depuis toujours d'informatique, j'ai réalisé mon cursus au sein d'epitech Lille.
+                      J'ai pus m'épanouir dans les différents projets proposés et par la suite encore plus en proposant mes services.
+                      <br/> Ce que j'aime ? Découvrir de nouvelles notions chaque jours dans ce domaine infini du développement.
                     </p>
                   </div>
-                  <div className=''>
+
+                  <div className='mt-20'>
                     <ul>
                       <li className='p-4'>
                         <p className='text-start text-2xl md:text-4xl text-gray-800 font-semibold'>Développement Front</p>
@@ -63,6 +66,7 @@ export default function Home() {
               </div>
             </div>
           </div>
+
       </main>
 
       <footer className="">
