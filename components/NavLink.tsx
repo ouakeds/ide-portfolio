@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 interface ILinkProps {
     title: string;
@@ -6,9 +7,12 @@ interface ILinkProps {
 
 const NavigationLink: React.FC<ILinkProps> = ({href, title}) => {
     return (
-        <a href={href} className="font-semibold text-xl text-gray-800 decoration-gray-700 hover:underline decoration-2 underline-offset-8">
-        {title}
-        </a>
+
+        <Link href={href}>
+            <button className="font-semibold text-xl text-gray-800 decoration-gray-700 hover:underline decoration-2 underline-offset-8">
+            {title}
+            </button>
+        </Link>
     )
 }
 

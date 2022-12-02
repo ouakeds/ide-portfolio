@@ -14,8 +14,8 @@ const NavBar = () => {
   
           <div className="flex items-center w-full h-40 text-align-center">
             <div className='space-x-12 mx-auto hidden md:block'>
-              <NavigationLink title='Home' href='#'/>
-              <NavigationLink title='Services' href='#'/>
+              <NavigationLink title='Home' href='#home'/>
+              <NavigationLink title='Services' href='#services'/>
               <NavigationLink title='Contact' href='#'/>
             </div>
           </div>
