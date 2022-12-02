@@ -15,7 +15,7 @@ export default function Home() {
       <main className="bg-gray-200">
           <NavBar/>
           <div className="relative" id='home'>
-            <div className="p-8 max-w-[1800px] h-screen mt-[-160px] w-full mx-auto flex flex-col justify-center z-10 relative ">
+            <div className="p-8 max-w-[1800px] h-screen mt-[-200px] w-full mx-auto flex flex-col justify-center z-10 relative ">
               <div className='p-8 max-w-[1800px] h-full w-full mx-auto flex flex-wrap flex-col justify-center'>
                 <h1 className='text-left text-black text-sm lg:text-l font-regular uppercase'>Développeur web fullstack_</h1>
                 <h1 className='text-left text-gray-900 text-6xl lg:text-8xl font-bold mt-6 drop-shadow-xl'>Bienvenue</h1>
@@ -30,8 +30,7 @@ export default function Home() {
           </div>
 
           <div className="relative bg-slate-50" id='services'>
-            <div className="p-8 max-w-[1800px] mt-[-160px] w-full mx-auto flex flex-col justify-center z-10 relative ">
-              <div className='p-8 max-w-[1800px] h-full w-full mx-auto flex flex-wrap flex-col justify-center grid grid-cols-1 md:grid-cols-2 space-x-0 md:space-x-20'>
+              <div className='p-8 max-w-[1800px] mt-[-160px] h-full w-full mx-auto flex flex-wrap flex-col justify-center grid grid-cols-1 md:grid-cols-2 space-x-0 md:space-x-20'>
                   <div className='mt-20'>
                     <h1 className='text-left text-black text-sm lg:text-l font-regular uppercase'>Services_</h1>
                     <h1 className='text-left text-gray-900 text-3xl lg:text-6xl font-bold mt-6 drop-shadow-xl'>Compétences</h1>
@@ -64,8 +63,63 @@ export default function Home() {
                   </div>
 
               </div>
+          </div>
+
+
+
+          <div className="relative bg-white" id='services'>
+              <div className=' h-[40rem] w-full flex  space-x-0 md:space-x-20'>
+                  <div className='basis-1/3 mt-20 h-[45rem] bg-red-500 mt-[-200px] relative hidden md:block'>
+                    <Image src='/transition.jpg' fill/>
+                  </div>
+
+                  <div className='p-8 max-w-[1300px] h-full w-full mx-auto flex  flex-col justify-center'>
+                    <h1 className='text-left text-black text-sm lg:text-l font-regular uppercase'>Expertises_</h1>
+                    <h1 className='text-left text-gray-900 text-3xl lg:text-6xl font-bold drop-shadow-xl mt-6'>Stack Spécialisé</h1>
+                        <ul className='mt-10'>
+                          <li>
+                            <div className="w-full bg-gray-200  h-10 ">
+                              <div className="bg-gray-800 h-10 w-[75%] p-2">
+                                <p className='text-white text-xl'>
+                                  NestJS
+                                </p>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div className="w-full bg-gray-200 h-10 mt-6">
+                              <div className="bg-gray-800 h-10 w-[85%] p-2">
+                                <p className='text-white text-xl'>
+                                React
+                                </p>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div className="w-full bg-gray-200 h-10 mt-6">
+                              <div className="bg-gray-800 h-10 w-[65%] p-2">
+                                <p className='text-white text-xl'>
+                                  Docker
+                                </p>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div className="w-full bg-gray-200 h-10 mt-6">
+                              <div className="bg-gray-800 h-10 w-[86%] p-2">
+                                <p className='text-white text-xl'>
+                                  Typescript
+                                </p>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                  </div>
             </div>
           </div>
+
+
+
 
       </main>
 
