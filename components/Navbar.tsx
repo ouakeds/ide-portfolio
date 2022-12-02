@@ -3,7 +3,7 @@ import NavigationLink from './NavLink';
 
 const NavBar = () => {
     return (
-      <nav className="h-40 w-full z-20 top-0 left-0  bg-slate-100 z-0">
+      <nav className="h-40 w-full z-40 relative bg-opacity-0 top-0 left-0  bg-slate-100 ">
         <div className="flex px-10">
           
           <div className="flex h-40">
