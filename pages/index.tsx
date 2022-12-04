@@ -4,7 +4,7 @@ import { ComposableMap, Geographies, Geography } from "react-simple-maps"
 export default function Home() {
   return (
     <div className='h-screen flex flex-wrap justify-center'>
-      <div className='max-w-[800px] flex flex-col p-5'>
+      <div className='max-w-[800px] flex flex-col p-5 justify-center'>
         <h1 className='text-left text-gray-300 text-sm lg:text-l font-regular uppercase'>Développeur web fullstack_</h1>
         <h1 className='text-left text-cyan-400 text-6xl lg:text-8xl font-bold mt-6 drop-shadow-xl'>À propos</h1>
         <p className='mt-10 text-white text-2xl'>

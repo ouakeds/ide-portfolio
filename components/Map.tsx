@@ -25,8 +25,6 @@ const Map: React.FC = () => {
                 scale: 500
             }}
         >
-
-
         <Geographies geography={json} fill={'#67e8f9'} stroke="#111827">
             {({ geographies }) =>
                 geographies.map((geo) => (

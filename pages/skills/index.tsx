@@ -3,7 +3,7 @@ export default function Skills() {
   return (
 
           <div className='h-screen  flex flex-wrap justify-center'>
-              <div className='w-[800px] max-w-[800px] w-full flex flex-col p-5'>
+              <div className='w-[800px] max-w-[800px] w-full flex flex-col p-5  justify-center'>
                 <h1 className='text-left text-gray-300 text-sm lg:text-l font-regular uppercase'>Développeur web fullstack_</h1>
                 <h1 className='text-left text-cyan-400 text-6xl lg:text-8xl font-bold mt-6 drop-shadow-xl'>Skills & Expérience </h1>
                 <p className='mt-10 text-white text-xl'>
