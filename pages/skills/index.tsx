@@ -1,28 +1,8 @@
-import { motion, MotionConfig, useAnimationControls } from 'framer-motion';
-import React, { useEffect } from "react"
+import { MotionConfig } from 'framer-motion';
+import React from "react"
+import ProgressBar from '../../components/ProgressBar';
 
-const sleep = (ms: number) => new Promise(
-    resolve => setTimeout(resolve, ms)
-);
-  
 export default function Skills() {
-
-    const gitControls = useAnimationControls()
-    const typescriptControls = useAnimationControls()
-    const reactControls = useAnimationControls()
-    const nestControls = useAnimationControls()
-    const dockerControls = useAnimationControls()
-
-    useEffect(() => {
-      sleep(2000).then(() => {
-        gitControls.start({width: "85%"})
-        typescriptControls.start({width: "80%"})
-        reactControls.start({width: "75%"})
-        nestControls.start({width: "65%"})
-        dockerControls.start({width: "55%"})
-      })
-    })
-
     return (
         <MotionConfig transition={{duration: 1.5}}>
             <div className='h-screen w-full flex flex-wrap justify-center px-10'>
@@ -45,37 +25,11 @@ export default function Skills() {
                     </p>
                 </div>
                 <div className='w-full max-w-[1200px] space-y-4 p-10 justify-center flex flex-col'>
-                    <div>
-                        <div className="mb-1 text-xl text-base font-medium text-red-500">Git</div>
-                        <div className="w-full h-2.5 mb-4 bg-gray-700">
-                            <motion.div className="bg-red-400 h-2.5 w-[0%]"  animate={gitControls} />
-                        </div>
-                    </div>
-                    <div>
-                        <div className="mb-1 text-xl text-base font-medium text-purple-500">Typescript</div>
-                        <div className="w-full h-2.5 mb-4 bg-gray-700">
-                            <motion.div className="bg-purple-400 h-2.5 w-[0%]"  animate={typescriptControls} />
-                        </div>
-                    </div>
-                    <div>
-                        <div className="mb-1 text-xl text-base font-medium text-orange-500">ReactJS</div>
-                        <div className="w-full h-2.5 mb-4 bg-gray-700">
-                            <motion.div className="bg-orange-400 h-2.5 w-[0%]"  animate={reactControls} />
-                        </div>
-                    </div>
-                    <div>
-                        <div className="mb-1 text-xl text-base font-medium text-green-500">NestJS</div>
-                        <div className="w-full h-2.5 mb-4 bg-gray-700">
-                            <motion.div className="bg-green-400 h-2.5 w-[0%]"  animate={nestControls} />
-                        </div>
-                    </div>
-                    <div>
-                        <div className="mb-1 text-xl text-base font-medium text-blue-500">Docker</div>
-                        <div className="w-full h-2.5 mb-4 bg-gray-700">
-                            <motion.div className="bg-blue-400 h-2.5 w-[0%]"  animate={dockerControls} />
-
-                        </div>
-                    </div>
+                    <ProgressBar key={"Git"} percent='85%' label='Git' color='red' delay={2000} />
+                    <ProgressBar key={"Typescript"} percent='80%' label='Typescript' color='purple' delay={2200} />
+                    <ProgressBar key={"React"} percent='75%' label='React' color='orange' delay={2400} />
+                    <ProgressBar key={"Nest"} percent='65%' label='Nest' color='green' delay={2600} />
+                    <ProgressBar key={"Docker"} percent='55%' label='Docker' color='blue' delay={2800} />
                 </div>
             </div>
         </MotionConfig>
