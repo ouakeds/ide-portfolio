@@ -1,10 +1,9 @@
 import Link from "next/link";
-import { ComposableMap, Geographies, Geography } from "react-simple-maps"
 import TextShpere from "../components/TextSphere";
 
 export default function Home() {
   return (
-    <div className='h-screen w-full flex flex-wrap justify-center px-10 bg-red-500'>
+    <div className='h-screen w-full flex flex-wrap justify-center px-10'>
       <div className='w-full max-w-[1200px] flex flex-col p-5 justify-center'>
         <h1 className='text-left text-gray-300 text-sm lg:text-l font-regular uppercase'>Développeur web fullstack_</h1>
         <h1 className='text-left text-cyan-400 text-6xl lg:text-8xl font-bold mt-6 drop-shadow-xl'>À propos</h1>

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { useEffect, useState } from "react";
 import SideBarLink from "./SidebarLink";
 import { FaLinkedinIn } from 'react-icons/fa';
@@ -9,8 +8,6 @@ const navLinks = [
   { href: '/skills', label: 'mes compétences'},
   { href: '/portfolio', label: 'portfolio'},
   { href: '/contact', label: 'contact'},
-  // incoming
-  // { href: '/blog', label: 'blog'},
 ]
 
 const Sidebar = () => {
@@ -23,7 +20,6 @@ const Sidebar = () => {
         lineIndexes.push(i)
       setIndexes(lineIndexes)
     }, [])
-
 
     return (
       <aside className="h-full flex " aria-label="Sidebar">

@@ -1,10 +1,9 @@
-import Map from "../../components/Map";
+import Map from "../../components/Map/Map";
 
 export default function Contact() {
-  return (
-
-          <div className='grid grid-cols-1 md:grid-cols-2 h-screen justify-center w-full '>
-              <div className='w-full max-w-[1100px] flex flex-col justify-center pt-10 px-20 content-center'>
+    return (
+        <div className='grid grid-cols-1 md:grid-cols-2 h-screen justify-center w-full '>
+            <div className='w-full max-w-[1100px] flex flex-col justify-center pt-10 px-20 content-center'>
                 <div className='justify-center'>
                     <h1 className='text-left text-gray-300 text-sm lg:text-l font-regular uppercase'>Développeur web fullstack_</h1>
                     <h1 className='text-left text-cyan-400 text-6xl lg:text-8xl font-bold mt-6 drop-shadow-xl'>Contact</h1>
@@ -20,7 +19,6 @@ export default function Contact() {
                             <input type="email" className="mb-6 border  text-xl  focus:ring-cyan-500 focus:border-cyan-500 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-gray-400 focus:ring-cyan-500 focus:border-cyan-500" required placeholder='Email' />
                         </div>
                         <input type="subject" className="mb-6 border  text-xl  focus:ring-cyan-500 focus:border-cyan-500 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-gray-400 focus:ring-cyan-500 focus:border-cyan-500" required placeholder='Sujet' />
-
                         <div className="px-4 py-2 bg-gray-700">
                             <label className="sr-only">Message</label>
                             <textarea id="comment" rows={6} className="w-full text-xl text-gray-400 border-0 bg-gray-700 focus:ring-0 placeholder-gray-400" required placeholder="Message"></textarea>
@@ -30,16 +28,12 @@ export default function Contact() {
                                 Envoyer
                             </span>
                         </button>
-
-
                     </form>
                 </div>
-
-
-              </div>
-              <div className='w-full  h-full max-w-[1400px] flex items-center overflow-hidden'>
-                 <Map />
-              </div>
-          </div>
-  )
+            </div>
+            <div className='w-full  h-full max-w-[1400px] flex items-center overflow-hidden'>
+                <Map />
+            </div>
+        </div>
+    )
 }
