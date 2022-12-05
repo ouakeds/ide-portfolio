@@ -7,9 +7,8 @@ import { useRouter } from 'next/router'
 const navLinks = [
   { href: '/', label: 'à propos'},
   { href: '/skills', label: 'mes compétences'},
+  { href: '/portfolio', label: 'portfolio'},
   { href: '/contact', label: 'contact'},
-  // incoming
-  // { href: '/portfolio', label: 'portfolio'},
   // incoming
   // { href: '/blog', label: 'blog'},
 ]
@@ -27,8 +26,8 @@ const Sidebar = () => {
 
 
     return (
-      <aside className="h-screen flex " aria-label="Sidebar">
-        <div className="w-64 py-4 px-3 bg-gray-800 md:flex  md:flex-col px-6 border-r  border-gray-700 hidden md:flex">
+      <aside className="h-full flex " aria-label="Sidebar">
+        <div className="w-64 py-4 px-3 bg-[#2b2b2b] md:flex  md:flex-col px-6 border-r  border-[#1c1c1c] hidden md:flex relative z-30">
             
             <div className='basis-1/6 pt-4'>
               <div className='content-center'>
@@ -61,7 +60,7 @@ const Sidebar = () => {
           <ul className='bg-green space-y-2 text-center flex flex-col pt-2'>
             {
               indexes.map((index) => (
-                <li key={index} className=' text-gray-700'>
+                <li key={index} className=' text-gray-600'>
                   {index}
                 </li>
               ))

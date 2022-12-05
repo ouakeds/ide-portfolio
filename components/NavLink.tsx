@@ -9,7 +9,7 @@ const NavigationLink: React.FC<ILinkProps> = ({href, title}) => {
     return (
 
         <Link href={href}>
-            <button className="font-semibold text-xl text-gray-800 decoration-gray-700 hover:underline decoration-2 underline-offset-8">
+            <button className="font-semibold text-xl text-gray-800 decoration-[#1c1c1c] hover:underline decoration-2 underline-offset-8">
             {title}
             </button>
         </Link>

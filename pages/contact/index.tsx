@@ -3,7 +3,7 @@ import Map from "../../components/Map";
 export default function Contact() {
   return (
 
-          <div className='grid grid-cols-1 md:grid-cols-2 h-screen justify-center '>
+          <div className='grid grid-cols-1 md:grid-cols-2 h-screen justify-center w-full '>
               <div className='w-full max-w-[1100px] flex flex-col justify-center pt-10 px-20 content-center'>
                 <div className='justify-center'>
                     <h1 className='text-left text-gray-300 text-sm lg:text-l font-regular uppercase'>Développeur web fullstack_</h1>
@@ -37,7 +37,7 @@ export default function Contact() {
 
 
               </div>
-              <div className='w-full  h-full max-w-[1400px] bg-gray-900 flex items-center overflow-hidden'>
+              <div className='w-full  h-full max-w-[1400px] flex items-center overflow-hidden'>
                  <Map />
               </div>
           </div>
