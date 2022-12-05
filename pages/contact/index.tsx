@@ -1,12 +1,26 @@
 import Map from "../../components/Map/Map";
+import TextSpan from "../../components/TextSpan";
 
 export default function Contact() {
+
+    const letters = "Contact";
+
     return (
         <div className='grid grid-cols-1 md:grid-cols-2 h-screen justify-center w-full '>
             <div className='w-full max-w-[1100px] flex flex-col justify-center pt-10 px-20 content-center'>
                 <div className='justify-center'>
                     <h1 className='text-left text-gray-300 text-sm lg:text-l font-regular uppercase'>Développeur web fullstack_</h1>
-                    <h1 className='text-left text-cyan-400 text-6xl lg:text-8xl font-bold mt-6 drop-shadow-xl'>Contact</h1>
+                    <h1 className='text-left text-cyan-400 text-6xl lg:text-8xl font-bold mt-6 drop-shadow-xl'>
+                        
+                        {
+                            letters.split('').map((letter: string, index: number) => (
+                                <TextSpan>
+                                    {letter === ' ' ? "\u00A0": letter}
+                                </TextSpan>
+                            ))
+                        }
+
+                    </h1>
                     <p className='mt-10 text-white text-2xl'>
                         Je suis ouvert à tout opportunité de freelance avec une préférence pour les projets à longue durée.
                         Cependant, si vous avez une requêtes ou une question, n'hésitez pas à me contacter
