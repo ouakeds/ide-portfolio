@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import SideBarLink from "./SidebarLink";
 import { FaLinkedinIn } from 'react-icons/fa';
 import { useRouter } from 'next/router'
+import Image from "next/image";
 
 const navLinks = [
   { href: '/', label: 'à propos'},
@@ -22,12 +23,14 @@ const Sidebar = () => {
     }, [])
 
     return (
-      <aside className="h-full flex " aria-label="Sidebar">
+      <aside className="h-full flex">
         <div className="w-64 py-4 px-3 bg-[#2b2b2b] md:flex  md:flex-col px-6 border-r  border-[#1c1c1c] hidden md:flex relative z-30">
             
             <div className='basis-1/6 pt-4'>
               <div className='content-center'>
-                <h1 className="text-center text-white text-2xl font-bold">Sabri Ouaked</h1>
+                <div className="relative h-48 w-48">
+                  <Image src='/S.png' alt='Logo' fill></Image>
+                </div>
               </div>
             </div>
             <ul className="basis-4/6 space-y-4  flex flex-col pt-10 align-middle">
@@ -53,7 +56,7 @@ const Sidebar = () => {
             </div>
         </div>
         <div className="w-10 h-full overflow-hidden md:flex md:flex-col px-4">
-          <ul className='bg-green space-y-2 text-center flex flex-col pt-2'>
+          <ul className='bg-green space-y-4 flex flex-col pt-2 items-center'>
             {
               indexes.map((index) => (
                 <li key={index} className=' text-gray-600'>
