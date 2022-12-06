@@ -20,8 +20,8 @@ export default function Contact() {
                         }
                     </div>
                     <p className='mt-10 text-white text-2xl'>
-                        Je suis ouvert à tout opportunité de freelance avec une préférence pour les projets à longue durée.
-                        Cependant, si vous avez une requêtes ou une question, n'hésitez pas à me contacter
+                        Je suis ouvert à toute opportunité de freelance avec une préférence pour les projets à longue durée.
+                        Cependant, si vous avez une requête ou une question, n'hésitez pas à me contacter
                     </p>
                 </div>
                 <div className='mt-12'>

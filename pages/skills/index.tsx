@@ -21,18 +21,18 @@ export default function Skills() {
                         }
                     </div>
                     <p className='mt-10 text-white text-xl'>
-                        J'ai réalisé mes études au sein de Epitech Lille  5 ans.
-                        La méthodologie de cette école par projet & en autonomie m'a grandement formés.
+                        J'ai réalisé mes études au sein d'Epitech Lille durant 5 ans.
+                        La méthode de cette école par projet & en autonomie m'a grandement formé.
                     </p>
                     <p className='mt-10 text-white text-xl'>
-                        J'ai eut l'opportunité de travailler avec des startups durant 3 ans et de les accompagner dans la construction de leur plateforme.
+                        J'ai eu l'opportunité de travailler avec des startups durant 3 ans et de les accompagner dans la construction de leur plateforme.
                     </p>
                     <p className='mt-10 text-white text-xl'>
-                        Pour ce faire, j'ai été amené à développer des interfaces responsives & fluide en collaborant avec des porteurs de projets & développeurs talentueux.
+                        Pour ce faire, j'ai été amené à développer des interfaces responsives & fluides en collaborant avec des porteurs de projets & développeurs talentueux.
                         Mais également à réaliser des architectures évolutives ainsi que des apis afin de répondre au modèle souhaité.
                     </p>
                     <p className='mt-10 text-white text-xl'>
-                        Visitez mon profil LinkedIn pour plus d'informations ou contactez-moi.
+                        Visitez mon profil Linkedin pour plus d'informations ou contactez-moi.
                     </p>
                 </div>
                 <div className='md:w-[40vw] w-full space-y-4 p-10 justify-center flex flex-col'>

@@ -27,14 +27,14 @@ export default function Home() {
 
         <p className='mt-10 text-white text-2xl'>
           Je suis développeur fullstack localisé à Lille.
-          J'apprécie concevoir de nouveaux projets et réaliser des architectures évolutives ainsi que des interfaces utilisateurs. 
+          J'apprécie concevoir de nouveaux projets et réaliser des architectures évolutives ainsi que des interfaces utilisateur. 
         </p>
         <p className='mt-10 text-white text-2xl'>
-          Je suis une personne organisé, aimant apprendre chaque jours de nouvelles choses.
+          Je suis organisé, et aime apprendre chaque jour de nouvelles choses.
           Fan de jeux vidéos, séries télévisés et d'IT.
         </p>
         <p className='mt-10 text-white text-2xl'>
-          Intéréssé par du développement web & api en Typescript, je reste ouvert à d'autre proposition de languague étant ouvert au challenges.
+          Intéressé par du développement web & api en Typescript, je reste ouvert à d'autre propositions de langage étant ouvert aux challenges.
         </p>
 
         <Link className='mt-10 text-cyan-400 font-semibold text-2xl' href='/contact'>
