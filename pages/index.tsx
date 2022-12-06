@@ -11,18 +11,18 @@ export default function Home() {
   const letters = "À propos";
 
   return (
-    <div className='h-screen w-full flex flex-wrap justify-center px-10'>
-      <div className='w-full max-w-[1200px] flex flex-col p-5 justify-center'>
+    <div className='h-screen w-full flex flex-wrap justify-center px-4 md:px-10 overflow-y-auto'>
+      <div className='md:w-[40vw] flex flex-col p-5 justify-center'>
         <h1 className='text-left text-gray-300 text-sm lg:text-l font-regular uppercase'>Développeur web fullstack_</h1>
-        <h1 className='text-left text-cyan-400 text-6xl lg:text-8xl font-bold mt-6 drop-shadow-xl'>
+        <div className='text-left text-cyan-400 text-4xl md:text-6xl font-bold mt-6 drop-shadow-xl'>
           {
             letters.split('').map((letter: string, index: number) => (
-              <TextSpan>
+              <TextSpan key={index}>
                 {letter === ' ' ? "\u00A0": letter}
               </TextSpan>
             ))
           }
-        </h1>
+        </div>
 
 
         <p className='mt-10 text-white text-2xl'>
@@ -41,7 +41,7 @@ export default function Home() {
           Construisons votre projet ensemble
         </Link>
       </div>
-      <div className='w-full max-w-[1100px] flex flex-col p-5'>
+      <div className='md:w-[40vw] flex flex-col'>
           <TextShpere/>
       </div>
     </div>

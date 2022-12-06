@@ -37,23 +37,22 @@ const sites = [
 
 export default function Portfolio() {
     return (
-        <div className='h-screen w-full flex p-20 justify-center'>
-            <div className="flex flex-wrap items-center justify-center">
-                {
-                    sites.map(({label, picture}) => (
-                        <div key={label} className="w-96 h-96 shadow-md relative flex justify-center z-10 mx-6">
-                            <div className="flex flex-col justify-center">
-                                <button type="button" className="hover:bg-opacity-100 text-white bg-orange-700 hover:bg-orange-800 focus:outline-none focus:ring-4 focus:ring-orange-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800">
-                                    Voir plus
-                                </button>
-                                {
-                                    picture && <Image src={picture} fill alt={`${label}-picture`} className="z-20  hover:z-20 hover:opacity-20 bg-gray-900 overflow-hidden"/>
-                                }
-                            </div>
+        <div className="h-screen overflow-y-auto w-full pt-10">
+            <div className="w-auto flex flex-wrap mx-auto items-center justify-center">
+            {
+                sites.map(({label, picture}) => (
+                    <div key={label} className="w-96 h-96 shadow-md relative flex justify-center items-center z-10 mx-2 my-2">
+                        <div className="flex flex-col justify-center">
+                            <button type="button" className="hover:bg-opacity-100 text-white bg-orange-700 hover:bg-orange-800 focus:outline-none focus:ring-4 focus:ring-orange-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800">
+                                Voir plus
+                            </button>
+                            {
+                                picture && <Image src={picture} fill alt={`${label}-picture`} className="z-20  hover:z-20 hover:opacity-20 bg-gray-900 overflow-hidden"/>
+                            }
                         </div>
-                    ))
-                }
-
+                    </div>
+                ))
+            }
             </div>
         </div>
     )

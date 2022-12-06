@@ -24,9 +24,8 @@ const TextShpere = () => {
         "Docker",
         "Docker-Compose",
       ];
-
       const options = {
-        radius: 300,
+        radius: 400,
         maxSpeed: "normal",
         initSpeed: "normal",
         keep: true,
