@@ -5,15 +5,13 @@ import TextSpan from '../../components/TextSpan';
 
 export default function Skills() {
 
-    const letters = "Skills & Expériences";
-
     return (
             <div className='h-screen w-full flex flex-wrap justify-center px-4 md:px-10'>
                 <div className='md:w-[40vw] flex flex-col p-5  justify-center'>
                     <h1 className='text-left text-gray-300 text-sm lg:text-l font-regular uppercase'>Développeur web fullstack_</h1>
                     <div className='text-left text-cyan-400 text-4xl md:text-6xl font-bold mt-6 drop-shadow-xl'>
                         {
-                            letters.split('').map((letter: string, index: number) => (
+                            "Skills & Expériences".split('').map((letter: string, index: number) => (
                             <TextSpan key={index}>
                                 {letter === ' ' ? "\u00A0": letter}
                             </TextSpan>
