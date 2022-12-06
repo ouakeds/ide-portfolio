@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  app:
+    image: sabri-ouaked
+    build:
+      dockerfile: ./Dockerfile.production
+      context: .
+    ports:
+      - "3000:3000"
