@@ -24,7 +24,6 @@ export default function Home() {
           }
         </div>
 
-
         <p className='mt-10 text-white text-2xl'>
           Je suis développeur fullstack localisé à Lille.
           J'apprécie concevoir de nouveaux projets et réaliser des architectures évolutives ainsi que des interfaces utilisateur. 
@@ -42,7 +41,7 @@ export default function Home() {
         </Link>
       </div>
       <div className='md:w-[40vw] flex flex-col'>
-          <TextShpere/>
+          {/* <TextShpere/> */}
       </div>
     </div>
   )
