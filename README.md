@@ -1,34 +1,92 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 💻 Personal Portfolio in IDE Style
 
-## Getting Started
+This project is a **personal portfolio site** made to look and feel like a real **code editor / IDE** interface.  
+Built with **Next.js**, **TypeScript**, and **Tailwind CSS**, it showcases key sections such as:
 
-First, run the development server:
+- 📄 About Me
+- ⚙️ Skills
+- 🧱 Projects
+- 📬 Contact Form
+
+---
+
+## 🎯 Goals
+
+The aim is to provide a fun, developer-centric showcase that mimics a coding environment, reflecting both personality and technical skill.
+
+---
+
+## 🧰 Tech Stack
+
+| Layer     | Technologies                          |
+|-----------|----------------------------------------|
+| Framework | [Next.js](https://nextjs.org/)         |
+| Language  | [TypeScript](https://www.typescriptlang.org/) |
+| Styling   | [Tailwind CSS](https://tailwindcss.com/) |
+| Email     | Contact form powered via SMTP (configurable in `.env`)
+
+---
+
+## 🖼️ Features
+
+- 🖥️ IDE-style layout and terminal look & feel
+- 📱 Fully responsive design
+- 🔧 Fully configurable content (skills, projects, text)
+- ✉️ Working contact form with SMTP backend
+- ⚡ Fast and lightweight
+
+---
+
+## 🚀 Getting Started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+---
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## 📬 Contact Form Setup
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Create a `.env.local` file in the root and set:
 
-## Learn More
+```env
+SMTP_HOST=smtp.example.com
+SMTP_PORT=465
+SMTP_USER=your_username
+SMTP_PASSWORD=your_password
+SMTP_FROM_EMAIL=you@example.com
+```
 
-To learn more about Next.js, take a look at the following resources:
+> The contact form uses [nodemailer](https://nodemailer.com/) to send emails.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 📸 Screenshots
 
-## Deploy on Vercel
+### 🏠 About
+![Landing screenshot](documentation/about.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 👤 Skills Section
+![About screenshot](documentation/skills.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### 🧱 Projects Showcase
+![Projects screenshot](documentation/projects.png)
+
+### ✉️ Contact Form
+![Contact screenshot](documentation/contact.png)
+
+---
+
+## 👨‍💻 Author
+
+Crafted by [Sabri Ouaked](https://www.linkedin.com/in/sabri-ouaked/) with 💻 and ❤️  
+[![GitHub](https://img.shields.io/badge/github-ouakeds-black?logo=github)](https://github.com/ouakeds)
+
+---
+
+## 📄 License
+
+MIT License — Free to use, modify and share.
